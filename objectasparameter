@@ -1,0 +1,30 @@
+ //RETURN OBJECT AS PARAMETER
+    #include<iostream>.
+    using namespace std;
+    class Program{
+        public:
+        int a;
+    Program(int b)//Parametrized constructor of class
+    {
+        a=b;
+
+    }
+    void display(){
+        cout<<"The value of a is = "<<a;
+
+    }
+    };
+    Program modify()//function with return type as class type, this function will return type object
+    {
+        Program obj1(2);
+        return obj1;
+
+    }
+    int main()
+    {
+        Program obj = modify();//calling of function using object of class because modify fuctions will
+        //return object and to store returned value
+        //we need similiar type object
+        obj. display();
+        
+    }
